@@ -66,7 +66,7 @@ The Snake game is a popular video game where the player controls a snake that gr
     ```bash
     git clone https://github.com/cmw15004431816/2024DD-Snake_Game.git
     ```
-2. Open Vivado and [load the project](#Load).
+2. Open Vivado and [load the project](#Load-the-project).
 
 ### Or
 1. If you don't want to clone the whole project, you can download the [snack.bit](snack.bit) file that I have prepared for you.
