@@ -69,7 +69,7 @@ The Snake game is a popular video game where the player controls a snake that gr
 2. Open Vivado and [load the project](#Load-the-project).
 
 ### Or
-1. If you don't want to clone the whole project, you can download the [snack.bit](snack.bit) file that I have prepared for you.
+1. If you don't want to clone the whole project, you can download the [snack.bit](https://github.com/cmw15004431816/2024DD-Snake_Game/raw/main/snack.bit) file that I have prepared for you.
 2. Program the `snack.bit` bitstream file directly into your `xz7k160tffg676-2L` FPGA board.
 3. **Playing the Game**:
     - Connect a VGA monitor and PS/2 keyboard to the FPGA board.
