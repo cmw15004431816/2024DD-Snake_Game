@@ -28,14 +28,23 @@ The Snake game is a popular video game where the player controls a snake that gr
 ```
 2024DD-Snake_Game/
 ├── img/
-│   └── snake_game.png
-├── ref/
-│   └── ref1.txt
-├── src/
-│   ├── vga_controller.v
-│   ├── snake_logic.v
-│   ├── top_module.v
 │   └── ...
+├── ref/
+│   └── ref1
+|       └── PS2.v
+├── src/
+│    ├── src/
+|    |   ├── VGA.v
+│    |   ├── snake_control.v
+│    |   ├── top.v
+│    |   └── ...
+|    ├── sim/
+|    |   ├── VGA_sim.v
+│    |   ├── snake_control_sim.v
+│    |   ├── top_sim.v
+│    |   └── ...
+|    └── constr/
+|        └── top.xdc
 ├── README.md
 ├── report.pdf
 └── snack.bit
@@ -55,8 +64,14 @@ The Snake game is a popular video game where the player controls a snake that gr
     ```
 2. Open Vivado and load the project.
 
+## Load the project
+1. **Open Vivado and create a new project.** You can name it whatever you like, or use my name `Snake_Game`. When creating the project, you must select the **xz7k160tffg676-2L** FPGA board.
+2. **Add design sources.** All the files in the [src](src/src) folder should be added as design sources.
+3. **(Optional)** Add simulation sources. All the files in the [sim](src/sim) folder should be added as simulation sources.
+4. **Add constrain file.** Add the [top.xdc](src/constr/top.xdc) file as the constrain.
+
 ## Usage
-1. **Synthesizing and Implementing**(Optional):
+1. **Synthesizing and Implementing**:
     - Open the project in Vivado.
     - Run synthesis, implementation, and generate the bitstream.
 
@@ -67,6 +82,9 @@ The Snake game is a popular video game where the player controls a snake that gr
 3. **Playing the Game**:
     - Connect a VGA monitor and PS/2 keyboard to the FPGA board.
     - Reset the FPGA and start playing using the switches.
+
+4. **(Optional) Run Simulation**:
+   - After adding the simulation sources, you can choose one simulation file and set it as top, then run the behavioral simulation.
 
 ## Design Details
 ### VGA Controller
