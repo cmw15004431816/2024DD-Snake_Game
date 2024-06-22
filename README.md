@@ -32,6 +32,10 @@ The Snake game is a popular video game where the player controls a snake that gr
 ├── ref/
 │   └── ref1
 |       └── PS2.v
+│   └── ref2
+|       └── VGA.v
+│   └── ref3
+|       └── Buzzer.md
 ├── src/
 │    ├── src/
 |    |   ├── VGA.v
